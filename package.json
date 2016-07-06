@@ -1,6 +1,6 @@
 {
   "name": "amped",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert HTML or article URL to AMP.",
   "main": "index.js",
   "repository": {
