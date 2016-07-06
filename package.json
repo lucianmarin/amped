@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "Convert HTML or article URL to AMP.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lucianmarin/amped.git"
+  },
   "bin": {
     "amped": "index.js"
   },

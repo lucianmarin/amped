@@ -1,6 +1,18 @@
 # amped
 Convert HTML or article URL to AMP.
 
+Install it:
+
+```
+npm install -g amped
+```
+
+Uninstall it:
+
+```
+npm uninstall -g amped
+```
+
 Convert HTML to AMP:
 
 ```
