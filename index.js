@@ -4,7 +4,7 @@ var program = require('commander'),
     format = require('distro-mic').format;
 
 program
-    .version('1.0.0')
+    .version('1.0.1')
     .option('-u, --url [type]', 'Input article URL')
     .option('-h, --html [type]', 'Input HTML code')
     .parse(process.argv);
