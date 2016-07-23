@@ -1,6 +1,6 @@
 {
   "name": "amped",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "Convert HTML or article URL to AMP.",
   "main": "index.js",
   "repository": {
@@ -11,9 +11,12 @@
     "amped": "index.js"
   },
   "dependencies": {
+    "article-json-to-amp": "^1.7.1",
+    "bluebird": "^3.4.1",
     "commander": "^1.3.2",
-    "html-to-amp": "^2.0.0",
-    "node-readability": "^2.2.0"
+    "html-to-article-json": "^1.15.0",
+    "node-readability": "^2.2.0",
+    "request-image-size": "^1.2.2"
   },
   "devDependencies": {},
   "scripts": {
