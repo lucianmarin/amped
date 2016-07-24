@@ -10,7 +10,7 @@ var Promise = require('bluebird');
 var size = require('request-image-size');
 
 program
-    .version('1.2.1')
+    .version('1.2.2')
     .option('-u, --url [type]', 'Input article URL')
     .option('-h, --html [type]', 'Input HTML code')
     .parse(process.argv);
@@ -36,10 +36,6 @@ function amped(html) {
 
         if (embedType !== 'image' || width && height || !src) {
             return row;
-        }
-
-        if (embedType == 'image' && width == 1 && height == 1 && src) {
-            return '';
         }
 
         var options = {
