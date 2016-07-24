@@ -1,6 +1,6 @@
 {
   "name": "amped",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Convert HTML or article URL to AMP.",
   "main": "index.js",
   "repository": {
@@ -23,13 +23,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "image",
-    "size",
-    "dimension",
-    "request",
-    "http",
-    "https",
-    "network"
+    "amp",
+    "html",
+    "readability",
+    "command",
+    "parser"
   ],
   "author": "Lucian Marin",
   "homepage": "https://github.com/lucianmarin/amped",

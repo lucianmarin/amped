@@ -10,7 +10,7 @@ var Promise = require('bluebird');
 var size = require('request-image-size');
 
 program
-    .version('1.2.3')
+    .version('1.2.4')
     .option('-u, --url [type]', 'Input article URL')
     .option('-h, --html [type]', 'Input HTML code')
     .parse(process.argv);
