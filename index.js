@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var readability = require('node-readability');
 
 var htmlToArticleJson = require('html-to-article-json')({});
 var convertToAmp = require('article-json-to-amp');
@@ -10,20 +9,12 @@ var Promise = require('bluebird');
 var size = require('request-image-size');
 
 program
-    .version('1.2.4')
-    .option('-u, --url [type]', 'Input article URL')
+    .version('1.2.7')
     .option('-h, --html [type]', 'Input HTML code')
     .parse(process.argv);
 
-if (program.url && !program.html) {
-    readability(program.url, function(err, article, meta) {
-        amped(article.content);
-        article.close();
-    });
-}
-
-if (program.html && !program.url) {
-    amped(program.html)
+if (program.html) {
+    amped(program.html);
 }
 
 function amped(html) {
